@@ -2,6 +2,27 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+st.markdown("""
+    <style>
+    /* Main background and font styling */
+    .main {
+        background-color: #0e1117;
+    }
+    /* Style metric cards */
+    div[data-testid="stMetric"] {
+        background-color: #1a1c24;
+        border: 1px solid #2d3139;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    /* Style headers */
+    h1, h2, h3 {
+        font-family: 'Inter', sans-serif;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 st.set_page_config(page_title="AI Personal Finance Manager", layout="wide")
 
 st.title("💰 AI-Powered Personal Finance Management System")
